@@ -1,6 +1,6 @@
 package composite;
 
-public abstract class DepartmentComponent {
+public interface DepartmentComponent {
 
     public abstract boolean isComposite();
 

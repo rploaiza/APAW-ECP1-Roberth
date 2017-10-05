@@ -3,7 +3,7 @@ package composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DepartmentComposite extends DepartmentComponent {
+public class DepartmentComposite implements DepartmentComponent {
 
     List<DepartmentComponent> departList;
 

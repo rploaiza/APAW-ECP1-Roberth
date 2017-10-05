@@ -2,7 +2,7 @@ package composite;
 
 import entity.Department;
 
-public class DepartmentLeaf extends DepartmentComponent {
+public class DepartmentLeaf implements DepartmentComponent {
 
     private Department department;
 
