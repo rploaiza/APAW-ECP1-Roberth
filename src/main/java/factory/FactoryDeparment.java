@@ -7,36 +7,36 @@ import entity.Department;
 
 public class FactoryDeparment {
 
-    private static final FactoryDeparment FACTORY_DEPARMENT = new FactoryDeparment();
+	private static final FactoryDeparment FACTORY_DEPARMENT = new FactoryDeparment();
 
-    private Map<Long, Department> factory;
+	private Map<Long, Department> factory;
 
-    private FactoryDeparment() {
-        this.factory = new HashMap<>();
-    }
+	private FactoryDeparment() {
+		this.factory = new HashMap<>();
+	}
 
-    public Department getDepartment(long id) {
-        return this.factory.get(id);
-    }
+	public Department getDepartment(long id) {
+		return this.factory.get(id);
+	}
 
-    public void almacenar(Department department) {
-        this.factory.put(department.getId(), department);
-    }
+	public void almacenar(Department department) {
+		this.factory.put(department.getId(), department);
+	}
 
-    public int size() {
-        return this.factory.size();
-    }
+	public int size() {
+		return this.factory.size();
+	}
 
-    public void borrar(Long id) {
-        this.factory.remove(id);
-    }
+	public void borrar(Long id) {
+		this.factory.remove(id);
+	}
 
-    public void clear() {
-        this.factory.clear();
-    }
+	public void clear() {
+		this.factory.clear();
+	}
 
-    public static FactoryDeparment getFactoryDeparment() {
-        return FACTORY_DEPARMENT;
-    }
+	public static FactoryDeparment getFactoryDeparment() {
+		return FACTORY_DEPARMENT;
+	}
 
 }
