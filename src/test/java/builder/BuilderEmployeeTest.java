@@ -22,7 +22,7 @@ public class BuilderEmployeeTest {
     @Test
     public void testEmployeeSurname() {
         Employee employee = new Employee(1L, "Loaiza");
-        assertEquals("Loaiza", employee.getSurname());
+		assertEquals("Loaiza", employee.getSurname());
         employee.setSurname("Rosas");
         assertEquals("Rosas", employee.getSurname());
     }

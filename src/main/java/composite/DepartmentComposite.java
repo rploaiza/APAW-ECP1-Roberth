@@ -5,40 +5,40 @@ import java.util.List;
 
 public class DepartmentComposite implements DepartmentComponent {
 
-    List<DepartmentComponent> departList;
+	private List<DepartmentComponent> departList;
 
-    private String name;
+	private String name;
 
-    public DepartmentComposite(String name) {
-        this.departList = new ArrayList<>();
-        this.name = name;
-    }
+	public DepartmentComposite(String name) {
+		this.departList = new ArrayList<>();
+		this.name = name;
+	}
 
-    @Override
-    public boolean isComposite() {
-        return true;
-    }
+	@Override
+	public boolean isComposite() {
+		return true;
+	}
 
-    @Override
-    public void add(DepartmentComponent component) {
-        assert component != null;
-        this.departList.add(component);
-    }
+	@Override
+	public void add(DepartmentComponent component) {
+		assert component != null;
+		this.departList.add(component);
+	}
 
-    @Override
-    public void remove(DepartmentComponent component) {
-        assert component != null;
-        this.departList.remove(component);
-    }
+	@Override
+	public void remove(DepartmentComponent component) {
+		assert component != null;
+		this.departList.remove(component);
+	}
 
-    @Override
-    public String view() {
-        return this.name;
-    }
+	@Override
+	public String view() {
+		return this.name;
+	}
 
-    @Override
-    public int size() {
-        return departList.size();
-    }
+	@Override
+	public int size() {
+		return departList.size();
+	}
 
 }
